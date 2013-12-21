@@ -1,0 +1,16 @@
+CIRCUIT xnorgate
+INPUT A 0
+INPUT B 4
+OUTPUT C 10
+OUTPUT D 11
+NOT 2ns 0 1
+NOT 1ns 0 2
+NOT 1ns 2 3
+NOT 2ns 4 5
+NOT 1ns 4 6
+NOT 1ns 6 7
+AND 1ns 1 7 8
+AND 1ns 3 5 9
+NOR 1ns 8 9 10
+XNOR 4ns 0 4 11
+

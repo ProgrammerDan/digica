@@ -1,0 +1,4 @@
+CIRCUIT not
+INPUT A 0
+OUPUT B 1
+NOT 2ns 0 1

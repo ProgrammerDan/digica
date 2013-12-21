@@ -1,0 +1,17 @@
+CIRCUIT 2x2Multiplier
+INPUT	N0	n0
+INPUT	N1	n1
+INPUT	M0	m0
+INPUT	M1	m1
+OUTPUT	S0	s0
+OUTPUT	S1	s1
+OUTPUT	S2	s2
+OUTPUT	S3	s3
+AND	1ns	n1	m0	n1m0
+AND	1ns	n0	m1	n0m1
+AND	1ns	n1	m1	n1m1
+NAND	1ns	n0	m0	n0m0
+AND	1ns	n1m0	n0m1	s3
+AND	1ns	n1m1	n0m0	s2
+XOR	1ns	n1m0	n0m1	s1
+NOT	1ns	n0m0	s0

@@ -1,0 +1,14 @@
+CIRCUIT xorgate
+INPUT A 0
+INPUT B 4
+OUTPUT C 10
+OUTPUT D 11
+NOT 1ns 0 1
+AND 1ns 0 0 3
+NOT 1ns 4 5
+AND 1ns 4 4 7
+AND 1ns 1 7 8
+AND 1ns 3 5 9
+OR 1ns 8 9 10
+XOR 3ns 0 4 11
+

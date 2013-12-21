@@ -1,0 +1,20 @@
+CIRCUIT 1to4-High_Active_Decoder
+INPUT	C0	a
+INPUT	C1	b
+INPUT	D	c
+OUTPUT	Z0	z0
+OUTPUT	Z1	z1
+OUTPUT	Z2	z2
+OUTPUT	Z3	z3
+NAND	1ns	c	c	d
+OR	1ns	a	b	e
+OR	1ns	d	e	z0
+NAND	1ns	c	a	f
+AND	1ns	b	b	g
+OR	1ns	f	g	z1
+NAND	1ns	c	b	h
+AND	1ns	a	a	i
+OR	1ns	h	i	z2
+NAND	1ns	c	a	j
+NAND	1ns	b	a	k
+OR	1ns	j	k	z3
